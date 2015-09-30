@@ -14,6 +14,7 @@ body {
 	background-image: url(images/grid-background.png);
 	margin-left: auto;
 	margin-right: auto;
+	max-width: 1245px;
 }
 
 
@@ -53,15 +54,14 @@ h2#writing {
 
 	font-weight: normal;
 	
-	text-shadow: 1px 1px 1px gray;
 }
 
 #content h2{
-	margin: -100px 0 50px 320px;
+	margin-top: -50px;
 	letter-spacing: 5px;
 	padding-bottom: 55px;
 	font-weight: normal;
-	text-shadow: 1px 1px 1px gray;
+
 
 }
 
@@ -101,18 +101,19 @@ h2#writing {
 #bio h2{
 	float: right;
 	font-weight: normal;
-	margin: 80px 210px 0 0 ;
+	margin: 80px 280px 10px 0 ;
 }
 
 #bio p{
-	float: left;
-	margin: 20px 0px 0px 80px ;
-	font-size: 1.2em;
-
+	
+	font-weight: normal;
+	margin-left: 300px;
+	width: 500px;
 }
+
+
 #bio a{
-	float: left;
-	margin: 70px 0px 0 -220px ;
+
 	font-size: 1.2em;
 	text-decoration: none;
 	color: black;
