@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>historic districts &amp; neighborhood revitalization</title>
+
+
+<link rel="stylesheet" href="css/screen.css" />
+<link rel="stylesheet" href="css/lightbox.css" />
+
+</head>
+
+<body>
+<div id="wrapper">
+	
+<header>
+	<img src="img/header-redo.png" alt="historic districts & neighborhood revitalization" width="940px" height="250px"/>
+
+</header>
+	
+<h3>by: margaret raimann</h3>
+<p> Historic districts and historic district zoning have been proven as effective methods of community and neighborhood revitalization. Other that holding architectural or historical significance, preserving an area can have other beneficial impacts on the community, including economic and environmental benefits. 
+One way to monitor the positive impact of historic districting is the vacancy rate of addresses in a neighborhood. Areas that have been designated as historic districts tend to have lower vacancy and foreclosure rates. The following series of maps highlights this trend in midwestern historic districts. 
+</p>
+
+
+  <div class="imageRow">
+  	<div class="set">
+  	  <div class="single first">
+  		  <a href="img/v2-midwest.png" rel="lightbox[districts]" title="The above map shows regional-level data of the number of historic districts in Midwestern cities with populations over 300,000."><img src="img/v2-midwest-thumb.png" alt="districts: image 1 0f 4 thumb" /></a>
+  		</div>
+      <div class="single">
+  		  <a href="img/local-level-redo.png" rel="lightbox[districts]" title="This series of local-level maps shows the cities with the highest percentage of newly added historic districts. The National Trust for Historic Preservation (<em>preservationnation.org</em>) highlights issues of historic preservation that affect today's society. Each of the cities shown in the following maps contains districts that exemplify these issues." ><img src="img/local-level-redo-thumb.png" alt="districts: image 2 0f 4 thumb" /></a>
+      </div>
+
+      <div class="single">
+  		  <a href="img/detroit-redo.png" rel="lightbox[districts]" title="'Sustainability.' The Sugar Hill Historic District has been converted from commercial to residential use, which provides a more environmentally friendly alternative to new development. Additionally, the residences in this district have been equipped with environmentally friendly energy sources, like solar panels. (<em>hourdetroit.com</em>)"><img src="img/detroit-redo-thumb.png" alt="districts: image 3 0f 4 thumb" /></a>
+      </div>
+      <div class="single">
+  		  <a href="img/chicago-redo.png" rel="lightbox[districts]" title="'Tax Incentives & Preserving Recent Past'. 20th Century architecture is beginning to emerge as significant architecturally. Aside from preserving the recent past, residents of areas like Rogers Park Bungalow District can benefit from tax freezes for a limited amount of time. (<em>chicagobungalow.org</em>)"><img src="img/chicago-redo-thumb.png" alt="districts: image 3 0f 4 thumb" /></a>
+      </div>      
+      <div class="single">
+  		  <a href="img/wichita-redo.png" rel="lightbox[districts]" title="'Community Revitalization.' Revitalizing a community through historic preservation includes both residential and commercial areas. The East Douglas Avenue Historic District is a commercial district in Wichita, Kansas that has been preserved to keep the area economically strong. (<em>wichita.gov</em>)"><img src="img/wichita-redo-thumb.png" alt="districts: image 3 0f 4 thumb" /></a>
+      </div>
+      <div class="single">
+  		  <a href="img/st-louis-redo.png" rel="lightbox[districts]" title="Gentrification. The positive impacts of  historic preservation highlighted in the previous cities can produce stronger communities overall. However, gentrification can often result as an area becomes attractive again, which does not favor current residents of that area. The Washington Avenue Historic District in St. Louis has been critiqued for gentrification in the effort to preserve the area."><img src="img/st-louis-redo-thumb.png" alt="districts: image 3 0f 4 thumb" /></a>
+      </div>
+      <div class="single last">
+  		  <a href="img/overall.png" rel="lightbox[districts]" title="These trends in historic preservation occur nationwide in urban and rural areas. While designating historic districts is just one way to strengthen communities, it is also an important factor in preserving an area's history."><img src="img/overall-thumb.png" alt="districts: image 4 0f 4 thumb" /></a>
+      </div>
+  	</div>
+  </div>
+
+<footer>
+	<p> <em>Sources: National Park Service - Historic District Points; Department of Housing and Urban Development - Vacancy &amp; Foreclosure Data; National Trust for Historic Preservation (preservationnation.org) - Caption information; Natural Earth Data - Basemaps</em></p>
+	
+</footer>
+
+</div>
+
+<script src="lightbox/js/jquery-1.7.2.min.js"></script>
+<script src="lightbox/js/jquery-ui-1.8.18.custom.min.js"></script>
+<script src="lightbox/js/jquery.smooth-scroll.min.js"></script>
+<script src="lightbox/js/lightbox.js"></script>
+
+<script>
+  jQuery(document).ready(function($) {
+      $('a').smoothScroll({
+        speed: 1000,
+        easing: 'easeInOutCubic'
+      });
+
+      $('.showOlderChanges').on('click', function(e){
+        $('.changelog .old').slideDown('slow');
+        $(this).fadeOut();
+        e.preventDefault();
+      })
+  });
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2196019-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'lightbox/text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

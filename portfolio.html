@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>margaret raimann | portfolio</title>
+
+<link href="css/screen.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/lightbox.css" />
+
+</head>
+
+<body>
+	
+<header> <a href = "index.html"> <img src="newimages/header.png" alt="margaret raimann" width="774px" height="190px"/></a></header>
+<nav>
+	<ul>
+		<li> <a href="portfolio.html">{ portfolio }</a> 
+			<ul>
+				<li><a href="web.html">+ web design</a></li>
+				<li><a href="print.html">+ static design</a></li>
+				<li><a href="writing.html">+ writing samples</a></li>
+			</ul>
+		</li>
+		<li> <a href="contact.html">{ contact }</a></li>
+		<li> <a href="documents/resume.pdf" target="_blank">{ résumé }</a></li>
+
+		
+	</ul>
+</nav>
+
+<!--old nav
+<nav>
+	<ul>
+		<li> <a href="index.html">home</a> </li>
+
+		<li> <a id="current" href="portfolio.html">portfolio +</a>
+			<ul>
+				<li><a href="web.html">+ web design</a></li>
+				<li><a href="print.html">+ static design</a></li>
+				<li><a href="writing.html">+ writing samples</a></li>
+			</ul>
+		</li>
+		<li> <a href="contact.html">contact</a></li>	
+
+		<li> <a href="documents/resume.pdf" target="_blank">résumé</a></li>
+	</ul>
+</nav>
+-->
+<div id="wrapper">
+
+		<ul>
+			<li><a href="web.html"><img src="newimages/web-thumb.png" alt="madison web map image"/></a></li>
+			<li><a href="print.html"><img src="newimages/static-thumb.png" alt="madison web map image"/></a></li>
+			<li><a href="writing.html"><img src="newimages/writing-thumb.png" alt="madison web map image"/></a></li>
+		</ul>
+	
+
+
+</div>
+
+
+	<footer>
+		<ul>
+			
+	<!--		<li><a href="http://www.linkedin.com/pub/margaret-raimann/33/271/3b1">{linkedin}</a></li>
+			
+			<li> margaret.raimann@gmail.com </li>
+	-->		
+			<li>margaret raimann | 2013</li>
+		</ul>
+	
+	
+	
+	</footer>
+<script src="lightbox/js/jquery-1.7.2.min.js"></script>
+<script src="lightbox/js/jquery-ui-1.8.18.custom.min.js"></script>
+<script src="lightbox/js/jquery.smooth-scroll.min.js"></script>
+<script src="lightbox/js/lightbox.js"></script>
+
+<script>
+  jQuery(document).ready(function($) {
+      $('a').smoothScroll({
+        speed: 1000,
+        easing: 'easeInOutCubic'
+      });
+
+      $('.showOlderChanges').on('click', function(e){
+        $('.changelog .old').slideDown('slow');
+        $(this).fadeOut();
+        e.preventDefault();
+      })
+  });
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2196019-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'lightbox/text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

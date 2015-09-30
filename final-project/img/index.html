@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>historic districts & neighborhood revitalization</title>
+
+
+<link rel="stylesheet" href="css/screen2.css" type="lightbox/text/css" media="screen" />
+<link rel="stylesheet" href="css/lightbox.css" type="lightbox/text/css" media="screen" />
+
+</head>
+
+<body>
+<div id="wrapper">
+	
+<header>
+	<img src="img/header.png" alt="historic districts" width="940px" height="250px"/>
+
+
+</header>
+	
+
+<p> Historic districts and historic district zoning have been proven as effective methods of community and neighborhood reviatalization. Other that holding architectural or historical significance, preserving an area can have other beneficial impacts on the community, including economic and environmental benefits. One way to monitor the positive impact of historic districting is the vacancy rate of addresses in a neighborhood. Areas that have been designated as historic districts tend to have lower vacancy and foreclosure rates. The following series of maps highlights this trend in midwestern historic districts. 
+</p>
+
+
+  <div class="imageRow">
+  	<div class="set">
+  	  <div class="single first">
+  		  <a href="img/v1-midwest.png" rel="historic district maps" title="The above map shows regional-level data of the number of historic districts in Midwestern cities with populations over 300,000."><img src="img/v1-midwest-thumb.png" alt="midwestern historic district data" /></a>
+  		</div>
+      <div class="single">
+  		  <a href="img/local-level.png" rel="historic district maps" title="This local-level analysis shows the cities with the highest percentage of newly added historic districts." ><img src="img/local-level-thumb.png" alt="local level" /></a>
+      </div>
+      <div class="single">
+  		  <a href="img/st-louis.png" rel="historic district maps" title="St. Louis, MO."><img src="img/st-louis-thumb.png" alt="st-louis" /></a>
+      </div>
+      <div class="single">
+  		  <a href="img/detroit.png" rel="historic district maps" title="Detroit, MI."><img src="img/detroit-thumb.png" alt="detroit" /></a>
+      </div>
+      <div class="single">
+  		  <a href="img/chicago.png" rel="historic district maps" title="Chicago, IL."><img src="img/chicago-thumb" alt="chicago" /></a>
+      </div>      
+      <div class="single">
+  		  <a href="img/wichita.png" rel="historic district maps" title="Wichita, KS."><img src="img/wichita-thumb.png" alt="wichita" /></a>
+      </div>
+      <div class="single last">
+  		  <a href="img/overall.png" rel="historic district maps" title="Number of historic districts, nationwide + other hisotic preservation benefits." alt="overall map" /></a>
+      </div>
+  	</div>
+  </div>
+
+
+
+</div>
+
+<script src="lightbox/js/jquery-1.7.2.min.js"></script>
+<script src="lightbox/js/jquery-ui-1.8.18.custom.min.js"></script>
+<script src="lightbox/js/jquery.smooth-scroll.min.js"></script>
+<script src="lightbox/js/lightbox.js"></script>
+
+<script>
+  jQuery(document).ready(function($) {
+      $('a').smoothScroll({
+        speed: 1000,
+        easing: 'easeInOutCubic'
+      });
+
+      $('.showOlderChanges').on('click', function(e){
+        $('.changelog .old').slideDown('slow');
+        $(this).fadeOut();
+        e.preventDefault();
+      })
+  });
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2196019-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'lightbox/text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
