@@ -11,9 +11,11 @@ function setMap() {
 	map = L.map('map').setView([-15,-72], 3);
 	
 	var layer = L.tileLayer(
-		'http://{s}.acetate.geoiq.com/tiles/acetate/{z}/{x}/{y}.png',
+		'http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png',
 		{
-			attribution: 'Acetate tileset from GeoIQ'
+			maxZoom: 5,
+			minZoom: 2,
+			attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
 		}).addTo(map);
 
 	processCSV();
@@ -83,7 +85,7 @@ function createMarkers(csvData) {
 		layer.on({
 			mouseover: function(){
 				layer.openPopup();
-				this.setStyle({fillColor: 'white', fillOpacity: .3, color: 'white'});
+				this.setStyle({fillColor: 'gray', fillOpacity: .3, color: 'gray'});
 			},
 			mouseout: function(){
 				layer.closePopup();
