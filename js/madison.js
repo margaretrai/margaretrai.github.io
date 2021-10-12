@@ -41,13 +41,14 @@ function setMap() {
 
 
 	//defines map tiles. Don't change unless you decide to change all of the tiles for the web maps!
-	var mapBoxURL = "http://{s}.tiles.mapbox.com/v3/margorai.map-txa5epxu/{z}/{x}/{y}.png";
-	var layer = L.tileLayer(
-	
-	mapBoxURL,
-	{	
-	attribution: 'Map Box Tileset'	//ALWAYS give attribution to the tileset server you use!
-	}).addTo(map);
+
+	var layer = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+    attribution: '© <a href="https://www.mapbox.com/about/maps/">Mapbox</a> © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> <strong><a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a></strong>',
+    tileSize: 512,
+    zoomOffset: -1,
+    id: 'mapbox/light-v10',
+    accessToken: 'pk.eyJ1IjoibWFyZ29yYWkiLCJhIjoiLWlBUmZKcyJ9.0s38q_eJeegpY_nvM9CFfA'
+		}).addTo(map);
 	
 	processCSV(); //calls the process CSV function
 

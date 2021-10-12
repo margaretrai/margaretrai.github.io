@@ -41,7 +41,8 @@ function setMap() {
 
 
 	//defines map tiles. Don't change unless you decide to change all of the tiles for the web maps!
-	var mapBoxURL = "http://{s}.tiles.mapbox.com/v3/margorai.map-txa5epxu/{z}/{x}/{y}.png";
+	L.mapbox.accessToken = 'pk.eyJ1IjoibWFyZ29yYWkiLCJhIjoiLWlBUmZKcyJ9.0s38q_eJeegpY_nvM9CFfA';
+	var mapBoxURL = "https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/{z}/{x}/{y}?access_token=" + L.mapbox.accessToken;
 	var layer = L.tileLayer(
 	
 	mapBoxURL,

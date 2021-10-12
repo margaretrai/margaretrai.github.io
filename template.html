@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	
+	
+<!--change title. this shows up in the tab in the web browser, NOT the actual header space... see header tag-->
+	<title>YOUR TITLE HERE</title>
+	
+	<!--stylesheets-->
+	<link rel="stylesheet" href="css/screen.css" />
+	<link rel="stylesheet" href="css/leaflet.css" />
+	<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/MarkerCluster.css" />
+	<link rel="stylesheet" href="css/MarkerCluster.Default.css" />
+	
+	<!--[if lte IE 8]>
+		<link rel="stylesheet" href="css/leaflet.ie.css" />
+	<![endif]-->
+
+</head>
+
+
+<div id = "backgroundAll"> </div>
+<body>
+	<div id = "wrapper">
+		<nav>
+			<!--this is a  list. items can be added similar to the existing ones, don't forget to add a | list item if you add a new one (i.e. if you add a new web map list item) also, change the web map names accordingly, the current web map should NOT be listed in this list, as this list's purpose is to navigate the user to other web maps!-->
+			<ul>
+				<li> <a href = "index.html" > back to main screen </a> </li>
+				<li>|</li>
+				<li> <a href = "madison.html" > madison</a> </li>
+				<li>|</li>
+				<li> <a href = "southwest.html" > southwest</a> </li>
+				<li>|</li>
+				<li> <a href = "http://www.blcprogram.org/" > blc program</a> </li>
+			</ul>
+		</nav>
+		<!--This is where you change the header! name your page accordinly, and similar to the other maps, only change the h1 tag, NOT h4 tag, that header should be consistent across the web maps.-->
+		<header><h1>yourcity, wisconsin </h1><h4>a digital collection of vernacular architecture</h4></header>
+		<!--This is a "sub navigation" bar where the user can zoom in to see different neighborhoods. You will need to change the home href, and the other list element ids and text to fit your map specifically. The id tags will need to match the ones you give in the JS file, so make them UNIQUE.-->
+		<div id="location-nav">
+			<ul>
+				<li> <a href = "##.html"> home </a> </li>
+				<li>|</li>
+				<li><a id="neighborhood-1">add name here</a></li>
+				<li>|</li>
+				<li><a id="neighborhood-2">add name here</a></li>
+				<li>|</li>
+				<li><a id="neighborhood-3">add name here</a></li>
+				<li>|</li>
+				<li><a id="neighborhood-4">add name here</a></li>
+				<li>|</li>
+				<li><a id="neighborhood-5">add name here</a></li>
+	
+			</ul>
+		</div>
+		
+	<!--This div contains the map and sidebar contents. ONLY change the overview sidebar content...see below-->
+	<div id = "content-container"></div>
+		<div id="map"> </div>
+	 	<div id="sidebar">
+			<div id="scrollbar1">
+				<div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+			<div class="viewport">
+				 <div class="overview">
+				 <!--change header accordingly-->
+						<h3 id='sidebarHeader' class="scroll1load"> About the web map... </h3>
+				 
+						<div id='sidebarHeader2' class="scroll1load"> </div>
+						
+						<!--change image path accordingly, size should match-->
+						<a id="sidebarImg"class="scroll1load"> <img src='img/overview1.png' width='360px' height='210px'/></a>
+						
+						<div id='sidebarContentAuthor' class="scroll1load"> </div>
+						
+						<!--change content accordingly, with <p> tags that look balanced-->
+						<div id='sidebarContent'class="scroll1load"><p>This web map is the result of a collaborative research project as part of an Undergraduate Hilldale Research Fellowship. The data compiled in the map comes from Prof. Anna Andrzejewski's research of the city of Madison—specifically its historic suburbs. The data was mostly compliled in a print guidebook to provide content for the Vernacular Architecture Forum's (VAF) annual conference, which was held in Madison in June 2012.</p><p>The guidebook possessed such rich information that we felt that it needed multiple platforms. Enter: The web map.</p><p>Using open-source geospatial and non-geospatial technologies, such as Leaflet and other JavaScript libraries, this web map can become available to any internet user. Whether navigating a Madison neighborhood first-hand, or virtually navigating on a rainy day, users can access the rich history of Madison's vernacular architecture.</p><p>To use the map, click on a neightborhood name in the navigation bar and explore!</p></div>
+				                  
+				</div>
+			</div>
+			
+				
+	
+			
+	
+	</div>
+</div>
+
+<footer><p>© margaret raimann 2013 <br><em> all data and image sources can be found in the Vernacular Architecture Forum guidebook, 2012.</em></p></footer>
+</div>
+
+
+
+
+
+
+	</div>
+	<!--libraries: DO NOT EDIT-->
+		<script src="js/libraries/leaflet-src.js"></script>
+		<script src="js/libraries/leaflet.markercluster-src.js"></script>
+
+		<script type="text/javascript" src="js/libraries/jquery-1.9.0.min.js"></script>
+		<script type="text/javascript" src="js/libraries/jquery.tinyscrollbar.min.js"></script>
+	<!--javascript functions: DO NOT EDIT -->
+		<script src="js/libraries/EventTarget.js"></script>
+		<script src="js/libraries/ProcessCSV.js"></script>
+	<!--main js file: SOME EDITING NEEDED, Also save a copy of the main.js as the name of your area (e.g. "madison.js") in the js folder. 
+	Then, change the path below to your newly created js file -->	
+		<script src="js/main.js"></script>
+	
+</body>
+</html>
