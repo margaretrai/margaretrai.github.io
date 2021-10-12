@@ -1,4 +1,0 @@
-**note**Currently only has full capability in Chrome...working on fixing for all browsers. 
-
-https://mywebspace.wisc.edu/mraimann/web/final-proj/final-project/index.html
-
